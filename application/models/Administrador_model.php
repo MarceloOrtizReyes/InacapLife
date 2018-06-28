@@ -67,9 +67,9 @@ class Administrador_model extends CI_Model{
         }
 
         public function create($row) {
-                $client = new Client_model();
-                $client->setColumns($row);
-                return $client;
+                $admin = new Administrador_model();
+                $admin->setColumns($row);
+                return $admin;
         }
 
         public function save() {
@@ -91,6 +91,21 @@ class Administrador_model extends CI_Model{
         }
         public function toArray() {
                 return get_object_vars($this);
+        }
+        public function login($email , $pass) {
+                $this->load->database();
+                // $alumno = $this->db->where('alu_email', $email);
+                // return $alumno;
+                $query = $this->db->where('adm_correo',$email);    //    La consulta se efectúa mediante Active Record. Una manera alternativa, y en lenguaje más sencillo, de generar las consultas Sql.
+                $query = $this->db->where('adm_clave',$pass);
+                $query = $this->db->get('Administrador');
+                if ($query->row() != null) {
+                        return $query->row();
+                }else{
+                        $data['datosIncorrectos'] = 'Correo y/o contraseña incorrectos';
+                }
+                
+    
         }
 }
  ?>}
