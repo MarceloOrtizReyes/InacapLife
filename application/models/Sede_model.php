@@ -66,9 +66,9 @@ class Sede_model extends CI_Model{
         }
 
         public function create($row) {
-                $client = new Client_model();
-                $client->setColumns($row);
-                return $client;
+                $sede = new Sede_model();
+                $sede->setColumns($row);
+                return $sede;
         }
 
         public function save() {

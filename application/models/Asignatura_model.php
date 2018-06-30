@@ -61,9 +61,9 @@ class Asignatura_model extends CI_Model{
         }
 
         public function create($row) {
-                $client = new Client_model();
-                $client->setColumns($row);
-                return $client;
+                $asignatu = new Asignatura_model();
+                $asignatu->setColumns($row);
+                return $asignatu;
         }
 
         public function save() {
@@ -87,4 +87,4 @@ class Asignatura_model extends CI_Model{
                 return get_object_vars($this);
         }
 }
- ?>}
+ ?>

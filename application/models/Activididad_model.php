@@ -1,16 +1,14 @@
 <?php 
-class Administrador_model extends CI_Model{
+class Actividad_model extends CI_Model{
 	public $_columns = array(
-		"adm_id" => 0,
-		"adm_nombre" =>'',
-		"adm_apellidoPaterno" =>'',
-		"adm_apellidoMaterno" =>'',
-		"adm_rut" =>0,
-		"adm_dv" =>0,
-		"adm_correo" =>'',
-		"adm_clave" =>'',
+		"act_id" => 0,
+		"act_descripcion" => '',
+                "act_feInicio" => '',
+                "act_feTermino" => '',
+                "act_tipo" => '',
+                "act_alu_id" => 0
 	);
-	private static $_table = 'Administrador';
+	private static $_table = 'Actividad';
 	public function __construct(){
 
         }
@@ -33,7 +31,7 @@ class Administrador_model extends CI_Model{
                 return $requiredFields;
         }
         public function isNew() {
-                return $this->_columns['adm_id'] == 0;
+                return $this->_columns['act_id'] == 0;
         }
         public function validate() {
                 $emptyCollumn = array();
@@ -55,7 +53,7 @@ class Administrador_model extends CI_Model{
         public function findById($id = null) {
                 $id = intval($id);
                 $this->load->database();
-                $res    = $this->db->get_where(self::$_table, array('adm_id' => $id));
+                $res    = $this->db->get_where(self::$_table, array('act_id' => $id));
                 $result = null;
                 if ($res->num_rows() == 1) {
                         $result = $this->create($res->row_object());
@@ -67,19 +65,19 @@ class Administrador_model extends CI_Model{
         }
 
         public function create($row) {
-                $admin = new Administrador_model();
-                $admin->setColumns($row);
-                return $admin;
+                $actividad = new Actividad_model();
+                $actividad->setColumns($row);
+                return $actividad;
         }
 
         public function save() {
                 try {
                         $this->load->database();
-                        if ($this->_columns['adm_id'] == 0 || is_null($this->_columns['adm_id'])) {
+                        if ($this->_columns['act_id'] == 0 || is_null($this->_columns['act_id'])) {
                                 $this->db->insert(self::$_table, $this->_columns);
-                                $this->_columns['adm_id'] = $this->db->insert_id();
+                                $this->_columns['act_id'] = $this->db->insert_id();
                         } else {
-                                $this->db->where('adm_id', $this->_columns['adm_id']);
+                                $this->db->where('act_id', $this->_columns['act_id']);
                                 $this->db->update(self::$_table, $this->_columns);
                         }
                 } catch (Exception $e) {
@@ -92,18 +90,5 @@ class Administrador_model extends CI_Model{
         public function toArray() {
                 return get_object_vars($this);
         }
-
-        function login($email, $clave) {
-                $datos = array();
-                $admin  = null;
-                $result = $this->db->get_where(self::$_table, array('adm_correo' => $email , 'adm_clave'=>$clave));
-                if ($result->num_rows() > 0) {
-                        $row = $result->row_object();
-                        //if ($row->use_password == sha1($clave)) {
-                                $admin = $this->create($row);
-                        //}
-                }
-                return $admin;
-        }       
 }
  ?>

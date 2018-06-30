@@ -62,9 +62,9 @@ class Carrera_model extends CI_Model{
         }
 
         public function create($row) {
-                $client = new Client_model();
-                $client->setColumns($row);
-                return $client;
+                $carrera = new Carrera_model();
+                $carrera->setColumns($row);
+                return $carrera;
         }
 
         public function save() {

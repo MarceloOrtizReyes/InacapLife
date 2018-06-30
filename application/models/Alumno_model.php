@@ -97,5 +97,20 @@ class Alumno_model extends CI_Model{
         public function toArray() {
                 return get_object_vars($this);
         }
+        public function login($email , $pass) {
+                $this->load->database();
+                // $alumno = $this->db->where('alu_email', $email);
+                // return $alumno;
+                $query = $this->db->where('alu_email',$email);    //    La consulta se efectúa mediante Active Record. Una manera alternativa, y en lenguaje más sencillo, de generar las consultas Sql.
+                $query = $this->db->where('alu_pass',$pass);
+                $query = $this->db->get('Alumno');
+                if ($query->row() != null) {
+                        return $query->row();
+                }else{
+                        $data['datosIncorrectos'] = 'Correo y/o contraseña incorrectos';
+                }
+                
+    
+        }
 }
  ?>

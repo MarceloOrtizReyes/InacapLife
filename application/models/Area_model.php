@@ -61,9 +61,9 @@ class Area_model extends CI_Model{
         }
 
         public function create($row) {
-                $client = new Client_model();
-                $client->setColumns($row);
-                return $client;
+                $area = new Area_model();
+                $area->setColumns($row);
+                return $area;
         }
 
         public function save() {
