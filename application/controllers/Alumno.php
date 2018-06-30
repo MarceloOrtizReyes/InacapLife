@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Tutor extends CI_Controller {
+class Alumno extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,35 +18,39 @@ class Tutor extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
+	public function index(){
+
 		$this->load->view('header');	
-		$this->load->view('tutorNavbar');
-		$this->load->view('tutorSidebar');
-		$this->load->view('tutorHome');
+		$this->load->view('alumnoNavbar');
+		$this->load->view('alumnoSidebar');
+		$this->load->view('alumnoHome');
 		$this->load->view('footer');
-		
+	
 	}
 
-	public function beneficios()
-	{
-		$this->load->view('header');	
-		$this->load->view('tutorNavbar');
-		$this->load->view('tutorSidebar');
-		$this->load->view('tutorBeneficios');
-		$this->load->view('footer');
-		
-	}
+	
+	public function actividades(){
 
-
-	public function tutorias()
-	{
 		$this->load->view('header');	
-		$this->load->view('tutorNavbar');
-		$this->load->view('tutorSidebar');
-		$this->load->view('tutorTutorias');
+		$this->load->view('alumnoNavbar');
+		$this->load->view('alumnoSidebar');
+		$this->load->view('alumnoActividades');
 		$this->load->view('footer');
-		
+	
 	}
+	
+	
+	public function beneficios(){
+
+		$this->load->view('header');	
+		$this->load->view('alumnoNavbar');
+		$this->load->view('alumnoSidebar');
+		$this->load->view('alumnoBeneficios');
+		$this->load->view('footer');
+	
+	}
+	
+	
+	
 
 }

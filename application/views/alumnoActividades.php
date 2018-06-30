@@ -1,9 +1,9 @@
-<div class="w3-col m9 w3-right w3-margin-right" style="margin-top:-30%">
+<div class="w3-col m9 w3-right w3-margin-right" style="margin-top:-27%">
 <div class="month"> 
   <ul>
     <li class="prev">&#10094;</li>
     <li class="next">&#10095;</li>
-    <li>Junio<br><span style="font-size:18px">2018</span></li>
+    <li>August<br><span style="font-size:18px">2018</span></li>
   </ul>
 </div>
 
@@ -14,7 +14,7 @@
   <li>Jueves</li>
   <li>Viernes</li>
   <li>Sabado</li>
-  <li>Domingo</li>
+  <li>Domngo</li>
 </ul>
 
 <ul class="days"> 
@@ -52,7 +52,6 @@
 
 </div>
 
-
 <div class="w3-container">
           <div class="w3-row">
             <div class="w3-half">
@@ -60,19 +59,23 @@
               <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
                  
                   <span class="w3-right w3-opacity">16 min</span>
-                  <h3>Tutorias</h3>
+                  <h3>Actividad</h3>
                   <hr class="w3-clear">
                   <h5>Fecha: 22/06/2018</h5>
+                  <h5>Tipo Actividad: Extracurricular</h5>
                   <h5>Área académica: Informatica</h5><br> 
                 </div>
+
+
             </div>
             <div class="w3-half">
               <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
                   
                   <span class="w3-right w3-opacity">16 min</span>
-                  <h3>Tutorias</h3>
+                  <h3>Actividad</h3>
                   <hr class="w3-clear">
                   <h5>Fecha: 22/06/2018</h5>
+                  <h5>Tipo Actividad: Extracurricular</h5>
                   <h5>Área académica: Informatica</h5><br>
                 </div>
             </div>
@@ -80,9 +83,10 @@
               
               <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
                   <span class="w3-right w3-opacity">16 min</span>
-                  <h3>Tutorias</h3>
+                  <h3>Actividad</h3>
                   <hr class="w3-clear">
                   <h5>Fecha: 22/06/2018</h5>
+                  <h5>Tipo Actividad: Extracurricular</h5>
                   <h5>Área académica: Informatica</h5><br>
                 </div>
 
@@ -91,15 +95,15 @@
             <div class="w3-half">
               <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
                   <span class="w3-right w3-opacity">16 min</span>
-                  <h3>Tutorias</h3>
+                  <h3>Actividad</h3>
                   <hr class="w3-clear">
                   <h5>Fecha: 22/06/2018</h5>
+                  <h5>Tipo Actividad: Extracurricular</h5>
                   <h5>Área académica: Informatica</h5><br> 
                 </div>
             </div>
           </div>
         </div>
-
 
 <style type="text/css">
 ul {list-style-type: none;}

@@ -41,6 +41,7 @@
 		  		}
 		  	</style>
 		  	<div class="w3-container w3-row w3-margin-top">
+		  		
 		  		<?php
 		  			foreach ($dataBeneficios as $key => $beneficios) {
 		  				$beneficios = $beneficios->toArray();

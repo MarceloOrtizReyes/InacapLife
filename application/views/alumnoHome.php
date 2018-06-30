@@ -1,4 +1,18 @@
-<div class="w3-container">
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;">    
+  <!-- The Grid -->
+  	<div class="w3-row">
+  		<div class="w3-col m9 w3-right" style="margin-top:-31%">
+  			
+			<div class="w3-content w3-display-container" style="max-width:1200px">
+			  <img class="mySlides" src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
+			  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+			    <button class="w3-button w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</button>
+			    <button class="w3-button w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</button>
+			  </div>
+			</div>
+
+	  		<div class="w3-container">
 	  			<div class="w3-row">
   					<div class="w3-half">
   						
@@ -52,3 +66,7 @@
   					</div>
 	  			</div>
 	  		</div>
+
+		</div>
+  	</div>
+</div>

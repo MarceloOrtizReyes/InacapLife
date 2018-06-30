@@ -1,4 +1,19 @@
 <body>
+  
+  <div class="w3-top" >
+    <div class="w3-bar w3-theme w3-left-align w3-large w3">
+      <a href="<?=base_url('Alumno'); ?>" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home" style="margin-right:10px"></i>Inicio</a>
+      <a href="<?=base_url('Alumno/estadoCuenta'); ?>" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home" style="margin-right:10px"></i>Estado de cuenta</a>
+      <a href="<?=base_url('Alumno/beneficios'); ?>" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home" style="margin-right:10px"></i>Beneficios</a>
+      <a href="<?=base_url('Alumno/actividades'); ?>" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home" style="margin-right:10px"></i>Actividades</a>
+      <a href="<?=base_url('Alumno/ayudantias'); ?>" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home" style="margin-right:10px"></i>Ayudantias</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home" style="margin-right:10px"></i>Social</a>
+      
+      
+      <a href="#" class="w3-bar-item w3-button w3-green w3-right w3-padding-large"><i class="fa fa-logout w3-margin-right"></i>Cerrar sesión</a></a>
+    </div>
+  </div>
+
   <style type="text/css">
     .w3-theme-l5 {color:#000 !important; background-color:#fdf1f0 !important}
     .w3-theme-l4 {color:#000 !important; background-color:#f9d1ce !important}
@@ -23,17 +38,3 @@
     .w3-hover-text-theme:hover {color:#d0271b !important}
     .w3-hover-border-theme:hover {border-color:#d0271b !important}
   </style>
-  
-  <div class="w3-top" >
-    <div class="w3-bar w3-theme w3-left-align w3-large w3">
-      <a href="<?=base_url('Tutor'); ?>" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home" style="margin-right:10px"></i>Inicio</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home" style="margin-right:10px"></i>Estado de cuenta</a>
-      <a href="<?=base_url('Tutor/beneficios'); ?>" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home" style="margin-right:10px"></i>Beneficios</a>
-      <a href="<?=base_url('Tutor/actividades'); ?>" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home" style="margin-right:10px"></i>Actividades</a>
-      <a href="<?=base_url('Tutor/tutorias'); ?>" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home" style="margin-right:10px"></i>Tutorias</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home" style="margin-right:10px"></i>Social</a>
-      
-      
-      <a href="#" class="w3-bar-item w3-button w3-green w3-right w3-padding-large"><i class="fa fa-logout w3-margin-right"></i>Cerrar sesión</a></a>
-    </div>
-  </div>
